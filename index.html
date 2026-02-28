@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sky Utopia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-10 py-4 bg-white shadow">
+    <h1 class="text-2xl font-bold text-blue-600">Sky Utopia</h1>
+    <ul class="flex gap-6 font-medium">
+      <li>Home</li>
+      <li>About</li>
+      <li>Destination</li>
+      <li>Tour</li>
+      <li>Blog</li>
+    </ul>
+    <div class="flex gap-3">
+      <button class="border px-4 py-2 rounded">Sign In</button>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded">Sign Up</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex items-center justify-between px-16 py-16">
+    <div class="w-1/2">
+      <h2 class="text-4xl font-bold leading-snug">
+        Discover The Best Destination In The World
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Let's find your dream destination here.
+      </p>
+
+      <!-- Booking Box -->
+      <div class="flex gap-4 bg-white p-6 rounded-xl shadow-lg mt-6">
+        <select id="location" class="border p-2 rounded">
+          <option value="">Select Location</option>
+          <option>Dhaka</option>
+          <option>Dubai</option>
+          <option>Italy</option>
+        </select>
+
+        <input type="date" id="date" class="border p-2 rounded">
+
+        <button id="searchBtn"
+          class="bg-blue-600 text-white px-5 py-2 rounded">
+          Search
+        </button>
+      </div>
+    </div>
+
+    <!-- Plane Image -->
+    <div class="w-1/2">
+      <img src="./images/airplane.png"
+        class="w-full">
+    </div>
+  </section>
+
+  <!-- Recommended Section -->
+  <section class="px-16 py-10">
+    <h3 class="text-2xl font-bold mb-6">Recommended Places</h3>
+
+    <div class="grid grid-cols-3 gap-6">
+      <img src="./images/view1.jpg"
+        class="rounded-3xl h-60 object-cover w-full">
+      <img src="./images/view2.jpg"
+        class="rounded-3xl h-60 object-cover w-full">
+      <img src="./images/view3.jpg"
+        class="rounded-3xl h-60 object-cover w-full">
+    </div>
+  </section>
+  <!-- Top Destination Section -->
+<section class="px-20 py-20 bg-gray-200 rounded-[40px] mx-16 my-16">
+
+  <!-- Heading -->
+  <div class="text-center mb-12">
+    <p class="text-blue-600 text-sm font-semibold">Top Destination</p>
+    <h2 class="text-3xl font-bold mt-2">
+      Let’s Explore Your Dream Destination Here!
+    </h2>
+    <p class="text-gray-500 mt-3">
+      We have recommended every week so you don’t have to worry
+      about your dream destination with Sky Utopia.
+    </p>
+  </div>
+
+  <!-- Booking Filter Row -->
+  <div class="flex justify-center gap-10 mb-12 text-sm font-medium">
+    <div>📍 Location</div>
+    <div>👤 Person</div>
+    <div>📅 Check In</div>
+    <div>📅 Check Out</div>
+    <button class="bg-blue-600 text-white px-6 py-2 rounded-lg">
+      Search
+    </button>
+  </div>
+
+  <!-- Cards -->
+  <div class="grid grid-cols-3 gap-10">
+
+    <!-- Card -->
+    <div class="bg-white p-4 rounded-3xl shadow-lg">
+      <img src="./images/Iffel-tower.jpg"
+        class="rounded-2xl h-60 w-full object-cover">
+
+      <div class="flex justify-between items-center mt-4">
+        <div>
+          <h3 class="font-bold">Eiffel Tower</h3>
+          <p class="text-sm text-gray-500">France, Paris</p>
+        </div>
+        <span class="bg-blue-700 text-white text-sm px-4 py-1 rounded-lg">
+          200$
+        </span>
+      </div>
+    </div>
+
+    <div class="bg-white p-4 rounded-3xl shadow-lg">
+      <img src="./images/swizerland.jpg"
+        class="rounded-2xl h-60 w-full object-cover">
+
+      <div class="flex justify-between items-center mt-4">
+        <div>
+          <h3 class="font-bold">Gondola Cable Car</h3>
+          <p class="text-sm text-gray-500">Switzerland</p>
+        </div>
+        <span class="bg-blue-700 text-white text-sm px-4 py-1 rounded-lg">
+          200$
+        </span>
+      </div>
+    </div>
+
+    <div class="bg-white p-4 rounded-3xl shadow-lg">
+      <img src="./images/London.jpeg"
+        class="rounded-2xl h-60 w-full object-cover">
+
+      <div class="flex justify-between items-center mt-4">
+        <div>
+          <h3 class="font-bold">River Thames and Tower Bridge </h3>
+          <p class="text-sm text-gray-500">London</p>
+        </div>
+        <span class="bg-blue-700 text-white text-sm px-4 py-1 rounded-lg">
+          200$
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Customer Review -->
+<section class="px-20 py-16">
+
+  <div class="max-w-md mx-auto bg-white p-6 rounded-2xl shadow-lg">
+    <p class="text-blue-600 text-sm font-semibold">What They Say</p>
+    <h3 class="text-xl font-bold mt-2">
+      What Our Customer say About Us
+    </h3>
+
+    <div class="flex items-center gap-3 mt-4">
+      <div class="w-10 h-10 bg-blue-600 text-white flex items-center justify-center rounded-full">
+        D
+      </div>
+      <h4 class="font-semibold">Davi Smith</h4>
+    </div>
+
+    <p class="text-gray-500 text-sm mt-3">
+      This platform is very helpful because there are many beautiful
+      destinations here and this platform really helps in finding
+      beautiful destinations and also very good service.
+    </p>
+
+    <div class="text-yellow-400 mt-3 text-lg">
+      ★★★★★
+    </div>
+  </div>
+
+</section>
+
+   <!-- Discount Banner -->
+<section class="px-20 pb-20">
+
+  <div class="bg-gray-200 rounded-[40px] py-12 text-center">
+    <h2 class="text-2xl font-bold">
+      Don’t Miss the 50% Discount &
+      Explore the beauty of the world
+    </h2>
+
+    <p class="text-gray-600 mt-3">
+      We have many special offers especially for you
+    </p>
+
+    <button class="mt-6 bg-blue-600 text-white px-6 py-2 rounded-lg">
+      Get Start
+    </button>
+  </div>
+
+</section>
+
+   <!-- Footer -->
+<footer class="bg-white px-20 py-16 border-t">
+
+  <div class="flex justify-between mb-10">
+
+    <!-- Logo -->
+    <div>
+      <h2 class="text-2xl font-bold text-blue-600">
+        Sky Utopia
+      </h2>
+    </div>
+
+    <!-- Email Input -->
+    <div class="flex">
+      <input type="email"
+        placeholder="Your Mail"
+        class="border px-4 py-2 rounded-l-lg outline-none">
+      <button class="bg-blue-600 text-white px-4 rounded-r-lg">
+        ➤
+      </button>
+    </div>
+
+  </div>
+
+  <hr class="mb-10">
+
+  <div class="grid grid-cols-4 gap-10 text-sm">
+
+    <div>
+      <h4 class="font-bold text-2xl">About</h4> <br>
+      <p class="text-sm">About us</p>
+      <p>Features</p>
+      <p>News</p>
+      <p>Careers</p>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-2xl">Company</h4> <br>
+      <p>Our Team</p>
+      <p>Partner</p>
+      <p>FAQ</p>
+      <p>Blog</p>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-2xl">Support</h4><br>
+      <p>Account</p>
+      <p>Support Center</p>
+      <p>Feedback</p>
+      <p>Accessibility</p>
+    </div>
+
+   <div class="flex flex-col gap-3">
+  <h4 class="font-bold text-2xl">Social Media</h4>
+  <div class="flex gap-4">
+    <img src="./images/instragram.png" class="w-10 h-10 cursor-pointer" alt="Instagram">
+    <img src="./images/twitter.png" class="w-10 h-10 cursor-pointer" alt="Twitter">
+    <img src="./images/facebook.png" class="w-10 h-10 cursor-pointer" alt="Facebook">
+  </div>
+</div>
+
+<div class="text-center text-gray-500 text-sm mt-10">
+    © 2025 Sky Utopia. All Rights Reserved.
+  </div>
+</footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("searchBtn")
+      .addEventListener("click", function () {
+
+        const location = document.getElementById("location").value;
+        const date = document.getElementById("date").value;
+
+        if (location === "" || date === "") {
+          alert("Please select location and date!");
+        } else {
+          alert("Searching trip to " + location + " on " + date);
+        }
+      });
+  </script>
+
+</body>
+</html>
